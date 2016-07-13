@@ -1,2 +1,2 @@
-# slider_basic-x-
+# slider_basic_x
 Photo slider_basic
