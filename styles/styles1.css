@@ -27,7 +27,7 @@ font-size: 30px;
 text-align: center;
 color: #C77E36;
 }
-span {
+.h3 {
 font-family: "Calibri", sans-serif;
 font-size: 50px;
 text-align: center;
@@ -38,7 +38,7 @@ color: #404040;
 font-size: 20px;
 text-align: center;
 }
-span {
+.h4 {
 font-family: "Calibri", sans-serif;
 font-size: 30px;
 text-align: center;
