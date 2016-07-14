@@ -1,6 +1,6 @@
 body {
 background-color: lightblue;
-font-family: Calibri;
+font-family: "Calibri", sans-serif;
 text-align: center;
 }
 #head {
@@ -22,13 +22,13 @@ h3 {
 text-align: center;
 }
 pre {
-font-family: Calibri;
+font-family: "Calibri", sans-serif;
 font-size: 30px;
 text-align: center;
 color: #C77E36;
 }
 span {
-font-family: Calibri;
+font-family: "Calibri", sans-serif;
 font-size: 50px;
 text-align: center;
 color: #404040;
@@ -38,8 +38,8 @@ color: #404040;
 font-size: 20px;
 text-align: center;
 }
-span1 {
-font-family: Calibri;
+span {
+font-family: "Calibri", sans-serif;
 font-size: 30px;
 text-align: center;
 color: #404040;
