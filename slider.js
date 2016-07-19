@@ -1,3 +1,5 @@
+"use strict";
+
 var ul;
 var li_items; 
 var li_number;
@@ -7,7 +9,6 @@ var image_width;
 var current = 0;
 
 function init(){
-"use strict";
     ul = document.getElementById('image_slider');
     li_items = ul.children;
     li_number = li_items.length;
@@ -21,7 +22,6 @@ function init(){
     slider(ul);
                }
 function slider(){
-"use strict";
     animate({
     delay:17,
     duration: 3000,
@@ -45,7 +45,6 @@ setTimeout(slider, 4000);
 }
 
 function goBack(left_limits){
-"use strict";
     current = 0;	
     setInterval(function(){
 	if(left_limits >= 0){
@@ -56,7 +55,6 @@ function goBack(left_limits){
                        17); }
 
 function animate(opts){
-"use strict";	
     var start = new Date;
     var id = setInterval(function(){
     var timePassed = new Date - start;
