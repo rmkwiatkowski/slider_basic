@@ -5,6 +5,7 @@ var image_number = 0;
 var slider_width = 0;
 var image_width;
 var current = 0;
+
 function init(){
     ul = document.getElementById('image_slider');
     li_items = ul.children;
@@ -15,7 +16,6 @@ function init(){
     slider_width += image_width;
     image_number++;
                }
-
     ul.style.width = parseInt(slider_width) + 'px';
     slider(ul);
                }
@@ -32,7 +32,7 @@ callback:function(){
 current++;
 if(current < li_number-1){
 slider();
-    }
+                         }
 else{
 var left = (li_number - 1) * image_width;					
 setTimeout(function(){goBack(left)},2000); 				
@@ -48,9 +48,9 @@ function goBack(left_limits){
 	if(left_limits >= 0){
 	ul.style.left = '-' + parseInt(left_limits) + 'px';
 	left_limits -= image_width / 10;
-    }	
-    }, 17);
-}
+                            }	
+                          },
+                       17); }
 
 function animate(opts){
     var start = new Date;
@@ -59,13 +59,13 @@ function animate(opts){
     var progress = timePassed / opts.duration
     if(progress > 1){
     progress = 1;
-}
+                    }
     var delta = opts.delta(progress);
     opts.step(delta);
     if (progress == 1){
     clearInterval(id);
     opts.callback();
-}
+                      }
 }, opts.dalay || 17);
 }
 window.onload = init;
