@@ -7,6 +7,7 @@ var image_number = 0;
 var slider_width = 0;
 var image_width;
 var current = 0;
+var i = 0
 
 function init(){
     ul = document.getElementById('image_slider');
@@ -68,6 +69,6 @@ function animate(opts){
     clearInterval(id);
     opts.callback();
                       }
-}, opts.dalay || 17);
+}, opts.delay || 17);
 }
 window.onload = init;
